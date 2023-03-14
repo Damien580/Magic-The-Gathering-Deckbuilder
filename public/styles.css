@@ -1,0 +1,321 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display:flex;
+    height: 25vh;
+    justify-content: center;
+    font-size: 4vh;
+   
+}  
+
+header2 {
+    display:flex;
+    height: 20vh;
+    background-color: bisque;
+    justify-items: center;
+    font-size: 4vh;
+    
+}    
+
+#title {
+    display: flex;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    font-family: 'Danger Night', fantasy;
+    text-shadow: 8px 8px 1px rgb(71, 71, 71);
+    font-size: 8vh;
+   -webkit-text-stroke: 1.75px rgb(67, 115, 26);
+   animation-delay: 0s;
+   animation-direction: alternate;
+   animation-duration: 6s;
+   animation-fill-mode: both;
+   animation-iteration-count: infinite;
+   animation-name: fade4;
+   text-decoration: none;
+}    
+
+#title2 {
+    display: flex;
+    margin-top: 3%;
+    color: rgb(0, 0, 0);
+    font-family: 'Danger Night', fantasy;
+    text-shadow: 8px 8px 1px rgb(31, 31, 31);
+    font-size: 8vh;
+   -webkit-text-stroke: 1px rgba(255, 76, 198, 0.729);
+   animation-delay: 0s;
+   animation-direction: alternate;
+   animation-duration: 6s;
+   animation-fill-mode: both;
+   animation-iteration-count: infinite;
+   animation-name: fade2;
+   text-decoration: none;
+}
+
+.navLink {
+    display: flex;
+    height:30%;
+   color:rgb(0, 0, 0); 
+}
+
+#home{
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: fade;
+    font-family: 'Danger Night', fantasy;
+    -webkit-text-stroke: 1px rgba(255, 76, 198, 0.729);
+    font-size: 5vh;
+    text-shadow: 8px 8px 1px rgb(31, 31, 31);
+    text-decoration: none;
+}
+
+#deck{
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: fade3;
+    font-family: 'Danger Night', fantasy;
+    -webkit-text-stroke: 1px rgb(59, 103, 22);
+    font-size: 5vh;
+    text-shadow: 8px 8px 1px rgb(71, 71, 71);
+    text-decoration: none;
+}
+
+@keyframes fade{
+   from{color: rgb(51, 47, 72);}
+   to{color:  rgba(255, 76, 198, 0.729);}
+}
+
+@keyframes fade2 {
+    from{color: rgba(255, 76, 198, 0.729);}
+    to{color:rgba(51, 47, 72)}
+}
+
+@keyframes fade3 {
+    from{color:rgba(83, 100, 142)}
+    to{color: rgb(255, 255, 255)}
+}
+
+@keyframes fade4{
+    from{color: rgba(255, 255, 255)}
+    to{color: rgb(120, 141, 180)}
+}
+
+#cardContainer{
+    display: flex;
+    position: absolute;
+   flex-direction: row;
+   flex-wrap: wrap;
+  
+}
+
+#body1 {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/844/612/52/fantasy-art-magic-the-gathering-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+#label1 {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(59, 103, 22);
+    font-size: larger;
+    font-family: 'Danger Night', fantasy;
+}
+
+#label2 {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(59, 103, 22);
+    font-size: larger;
+    font-family: 'Danger Night', fantasy;
+}
+
+#label3 {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(59, 103, 22);
+    font-size: larger;
+    font-family: 'Danger Night', fantasy;
+}
+
+#body2 {
+    background-image: url('https://images.alphacoders.com/265/265693.png');
+    background-size: auto;
+    
+   
+}
+#deckContainer{
+    display: flex;
+    position: relative;
+    left: 4.25%;
+   flex-direction: row;
+   flex-wrap: wrap;
+ 
+}
+
+
+img {
+    display: flex;
+    height: 25vh;
+    margin: 8px;
+   
+}
+
+img2 {
+    display: flex;
+    height: 25vh;
+    margin: 5px;
+}
+
+
+.card-container {
+    transition: transform .2s;
+}
+
+.deck-container {
+    transition: transform .2s;
+}
+
+
+.card-container:hover {
+    transform: scale(2);
+}
+
+.deck-container:hover {
+    transform: scale(1.5);
+}
+
+#sets{
+    display: flex;
+    color: rgb(36, 49, 65);
+    background-color: transparent;
+    font-size: 3vh;
+    border: rgb(24, 62, 109);
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  font-family: 'Danger Night', fantasy;
+  position: relative;
+  left: 1vw;
+}
+
+#sets2{
+    display: flex;
+    color: rgb(255, 76, 198, 0.729);
+    background-color: transparent;
+    font-size: 3vh;
+    border: transparent;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  font-family: 'Danger Night', fantasy;
+  position: relative;
+  left: 1vw;
+}
+
+#colors{
+    display: flex;
+    color: rgb(36, 49, 65);
+    background-color: transparent;
+    font-size: 3vh;
+    border: rgb(24, 62, 109);
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  font-family: 'Danger Night', fantasy;
+  position: relative;
+  left: 1vw;
+}
+
+#types{
+    display: flex;
+    color: rgb(36, 49, 65);
+    background-color: transparent;
+    font-size: 3vh;
+    border: rgb(24, 62, 109);
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  font-family: 'Danger Night', fantasy;
+  position: relative;
+  left: 1vw;
+}
+
+#submit1{
+    
+    background-color: transparent;
+    font-size: 3vh;
+    font-family: 'Danger Night', fantasy;
+    color: rgb(24, 62, 109);
+    width: 7vw;
+    position: relative;
+  left: 1vw;
+   border-radius: 20%; 
+   border-style:none;
+}
+
+#submit1:hover{
+    background-color: snow;
+}
+
+#cardInput{
+    background-color: transparent;
+    border: none;
+    font-size: 3vh;
+    color: rgba(255, 76, 198, 0.729);
+    font-family: 'Danger Night', fantasy;
+    position: relative;
+  left: 1vw;
+}
+
+#cardInput::placeholder{
+    color: rgba(255, 76, 198, 0.729);
+    font-family: 'Danger Night', fantasy;
+}
+
+#submit2{
+    display: flex;
+    position: relative;
+  left: 1vw;
+  background-color: transparent;
+  border-style: none;
+   font-family: 'Danger Night', fantasy;
+   color: rgba(255, 76, 198, 0.729);
+   font-size: 3vh;
+   border-radius: 20%;
+}
+
+#submit2:hover{
+    background-color: rgb(11, 62, 106);
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#spark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+

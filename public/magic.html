@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Deckbuilder</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<header>
+    <section id="title">
+    Magic: The Gathering - Deck Builder
+    </section>
+
+    <div>
+    <a href="/deckLink" class="navLink" id="deck">Deck</a>
+    </div>
+    
+   
+</header>
+
+<body id="body1">
+    <form id="dropdowns">
+        <div id="drop1">
+                <select id="sets">
+                    <option value="">Please Choose a Set...</option>
+                    <option value="LEA" id="LEA">LEA</option>
+                    <option value="LEB" id="LEB">LEB</option>
+                    <option value="2ED" id="2ED">2ED</option>
+                    <option value="3ED" id="3ED">3ED</option>
+                    <option value="4ED" id="4ED">4ED</option>
+                    <option value="5ED" id="5ED">5ED</option>
+                    <option value="6ED" id="6ED">6ED</option>
+                    <option value="7ED" id="7ED">7ED</option>
+                    <option value="8ED" id="8ED">8ED</option>
+                    <option value="9ED" id="9ED">9ED</option>
+                    <option value="10ED" id="10ED">10ED</option>
+                    <option value="M10" id="M10">M10</option>
+                    <option value="M11" id="M11">M11</option>
+                    <option value="M12" id="M12">M12</option>
+                    <option value="M13" id="M13">M13</option>
+                    <option value="M14" id="M14">M14</option>
+                    <option value="M15" id="M15">M15</option>
+                    <option value="ORI" id="ORI">ORI</option>
+                    <option value="M19" id="M19">M19</option>
+                    <option value="M20" id="M20">M20</option>
+                    <option value="M21" id="M21">M21</option>
+                    <option value="">EXPANSIONS:</option>
+                    <option value="ARN">Arabian Nights</option>
+                    <option value="ATQ">Antiquities</option>
+                    <option value="LEG">Legends</option>
+                    <option value="DRK">The Dark</option>
+                    <option value="FEM">Fallen Empires</option>
+                    <option value="ICE">Ice Age</option>
+                    <option value="HML">Homelands</option>
+                    <option value="All">Alliances</option>
+                    <option value="MIR">Mirage</option>
+                    <option value="VIS">Visions</option>
+                    <option value="WTH">Weatherlight</option>
+                    <option value="TMP">Tempest</option>
+                    <option value="STH">Stronghold</option>
+                    <option value="EXO">Exodus</option>
+                    <option value="USG">Urza's Saga</option>
+                    <option value="ULG">Urza's Legacy</option>
+                    <option value="UDS">Urza's Destiny</option>
+                    <option value="MMQ">Mercadian Masques</option>
+                    <option value="NEM">Nemesis</option>
+                    <option value="PCY">Prophecy</option>
+                    <option value="INV">Invasion</option>
+                    <option value="PLS">Planeshift</option>
+                    <option value="APC">Apocalypse</option>
+                    <option value="ODY">Odyssey</option>
+                    <option value="TOR">Torment</option>
+                    <option value="JUD">Judgement</option>
+                    <option value="ONS">Onslaught</option>
+                    <option value="LGN">Legions</option>
+                    <option value="SCG">Scourge</option>
+                    <option value="MRD">Mirrodin</option>
+                    <option value="DST">Darksteel</option>
+                    <option value="5DN">Fifth Dawn</option>
+                    <option value="CHK">Champions of Kamigawa</option>
+                    <option value="BOK">Betrayers of Kamigawa</option>
+                    <option value="SOK">Saviours of Kamigawa</option>
+                    <option value="RAV">Ravnica: City of Guilds</option>
+                    <option value="GPT">Guildpact</option>
+                    <option value="DIS">Dissension</option>
+                    <option value="CSP">Coldsnap</option>
+                    <option value="TSP">Time Spiral</option>
+                    <option value="PLC">Planar Chaos</option>
+                    <option value="FUT">Future Sight</option>
+                    <option value="LRW">Lorwyn</option>
+                    <option value="MOR">Morningtide</option>
+                    <option value="SHM">Shadowmoor</option>
+                    <option value="EVE">Eventide</option>
+                    <option value="ALA">Shards of Alara</option>
+                    <option value="CON">Conflux</option>
+                    <option value="ARB">Alara Reborn</option>
+                    <option value="ZEN">Zendikar</option>
+                    <option value="WWK">Worldwake</option>
+                    <option value="ROE">Rise of the Eldrazi</option>
+                    <option value="SOM">Scars of Mirrodin</option>
+                    <option value="MBN">Mirrodin Beseiged</option>
+                    <option value="NPH">New Phyrexia</option>
+                    <option value="ISD">Innistrad</option>
+                    <option value="DKA">Dark Ascension</option>
+                    <option value="AVR">Avacyn Restored</option>
+                    <option value="RTR">Return to Ravnica</option>
+                    <option value="GTC">Gatecrash</option>
+                    <option value="DGM">Dragon's Maze</option>
+                    <option value="THS">Theros</option>
+                    <option value="BNG">Born of the Gods</option>
+                    <option value="JOU">Journey into Nyx</option>
+                    <option value="KTK">Khans of Tarkir</option>
+                    <option value="FRF">Fate Reforged</option>
+                    <option value="DTK">Dragons of Tarkir</option>
+                    <option value="BFZ">Battle for Zendikar</option>
+                    <option value="OGW">Oath of the Gatewatch</option>
+                    <option value="SOI">Shaddows over Innistrad</option>
+                    <option value="EMN">Eldritch Moon</option>
+                    <option value="KLD">Kaladesh</option>
+                    <option value="AER">Aether Revolt</option>
+                    <option value="AKH">Amonkhet</option>
+                    <option value="HOU">Hour of Devastation</option>
+                    <option value="XLN">Ixalan</option>
+                    <option value="RIX">Rivals of Ixalan</option>
+                    <option value="DOM">Dominaria</option>
+                    <option value="GRN">Guilds of Ravnica</option>
+                    <option value="RNA">Ravnica Allegiance</option>
+                    <option value="WAR">War of the Spark</option>
+                    <option value="ELD">Throne of Eldraine</option>
+                    <option value="THB">Theros Beyond Death</option>
+                    <option value="IKO">Ikoria: Lair of Behemoths</option>
+                    <option value="ZNR">Zendikar Rising</option>
+                    <option value="KHM">Kaldheim</option>
+                    <option value="STX">Strixhaven: School of Mages</option>
+                    <option value="AFR">Dungeons & Dragons: Adventures in the Forgotten Realms</option>
+                    <option value="MID">Innistrad: Midnight Hunt</option>
+                    <option value="VOW">Innistrad: Crimson Vow</option>
+                    <option value="NEO">Kamigawa: Neon Dynasty</option>
+                    <option value="SNC">Streets of New Capenna</option>
+                    <option value="DMU">Dominari United</option>
+                    <option value="BRO">The Brothers War</option>
+                    <option value="ONE">Phyrexia: All Will Be One</option>
+                    <option value="MOM">March of the Machine</option>
+                    <option value="MAT">March of the Machine: The Aftermath</option>
+            </select>
+        </div>
+        <br/>
+        <div id="drop2">
+           
+                <select id="colors">
+                    <option value="">Please Choose a Color...</option>
+                    <option value="R" id="Red">Red</option>
+                    <option value="U" id="Blue">Blue</option>
+                    <option value="G" id="Green">Green</option>
+                    <option value="B" id="Black">Black</option>
+                    <option value="W" id="White">White</option>
+                </select>
+        </div>
+        <br/>
+        <div id="drop3">
+                <select id="types">
+                    <option value="">Please Choose a Card Type...</option>
+                    <option value="Artifact" id="artifact">Artifacts</option>
+                    <option value="Conspiracy" id="conspiracy">Conspiracy</option>
+                    <option value="Creature" id="creature">Creature</option>
+                    <option value="Enchantment" id="enchantment">Enchantment</option> 
+                    <option value="Instant" id="instant">Instant</option>
+                    <option value="Land" id="land">Land</option>
+                    <option value="Phenomenon" id="phenomenon">Phenomenon</option>
+                    <option value="Plane" id="plane">Plane</option>
+                    <option value="Planeswalker" id="planeswalker">Planeswalker</option>
+                    <option value="Scheme" id="scheme">Scheme</option>
+                    <option value="Sorcery" id="sorcery">Sorcery</option>
+                    <option value="Tribal" id="tribal">Tribal</option>
+                    <option value="Vanguard" id="vanguard">Vanguard</option>
+                </select>
+        </div>
+        <br/>
+            <button type="submit" id="submit1">Submit</button>
+    </form>
+
+        <main id="container"> 
+        <section id="cardContainer"></section>
+        </main>
+   
+        <div id="snow"></div>  
+   
+   
+       
+
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
